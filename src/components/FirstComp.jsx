@@ -1,7 +1,8 @@
 import React from "react";
 
-const FirstComp = ({ name }) => {
+const FirstComp = ({ name, getData }) => {
   const test = "World";
+  getData(test);
   return (
     <div>
       <h2>Welcome, {name} !</h2>
